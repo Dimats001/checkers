@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    flex-grow: 1;
+    font-size: 1rem;
+}
+
+header {
+    background-color: #5FCF80;
+    height: 12vh;
+}
+
+footer{
+    height: 12vh;
+    background-color: #5FCF80;
+}
+
+nav div {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    height: 5vh;
+}
+
+nav div div{
+    flex-grow: 1;
+    background: #eee;
+    border-right: 1px solid black;
+
+}
+
+nav div div:hover{
+    background-color: #ddd;
+}
+
+nav div :last-child{
+    border-right: 0px;
+}
+
+.content{
+    display: flex;
+    font-size: 0px;
+    height: 71vh;
+}
+
+.settings{
+    flex-grow: 0.15;
+    background-color: lightblue;
+}
+
+.game{
+    flex-grow: 0.6;
+    background-color: blue;
+}
+
+.players{
+    flex-grow: 0.25;
+    background-color: lightblue;
+}
