@@ -11,11 +11,25 @@ section {
 header {
     background-color: #5FCF80;
     height: 12vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 4px 4px 2px #5FCF00;
 }
 
 footer{
     height: 12vh;
     background-color: #5FCF80;
+}
+
+img{
+    object-fit: cover;
+    height: 50px;
+    width: 50px;
 }
 
 nav div {
@@ -32,6 +46,8 @@ nav div div{
     background: #eee;
     border-right: 1px solid black;
 
+    font-size: 20px;
+    font-weight: bold;
 }
 
 nav div div:hover{
@@ -49,16 +65,92 @@ nav div :last-child{
 }
 
 .settings{
-    flex-grow: 0.15;
+    width: 15vw;
     background-color: lightblue;
 }
 
 .game{
-    flex-grow: 0.6;
-    background-color: blue;
+    width: 60vw;
+    background-color: #ddd;
 }
 
-.players{
-    flex-grow: 0.25;
+.playersInfo{
+    width: 25vw;
     background-color: lightblue;
+}
+
+.settings_elem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-bottom: calc(1vh / 3) solid black;
+    height: 20vh;
+
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.settings_elem:hover{
+    background-color: #00AFF0;
+}
+
+.settings_elem:first-child:hover{
+    background-color: lightblue;
+}
+.settings div:last-child {
+    border-bottom: 0px;
+}
+
+.settings div:first-child {
+    height: 10vh;
+}
+
+.player {
+    border-bottom: 0.5vh solid black;
+    height: 35vh;
+}
+
+.playersInfo div:last-child{
+    border: 0;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    background-color: #00AFF0;
+    height: 50px;
+}
+
+.name {
+    text-align: center;
+    flex-grow: 1;
+}
+
+.timer{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.options{
+    position: relative;
+    height: 3vh;
+    bottom: calc(-29vh + 80px - 4.3763px);
+
+    background-color: #00BFBB;
+
+    font-size: 0;
+}
+
+.options div{
+    display: inline-block;
+    width: calc(50% - 0.5px);
+
+    text-align: center;
+
+    font-size: 18px;
+}
+
+.options div:first-child{
+    border-right: 1px solid black;
 }
